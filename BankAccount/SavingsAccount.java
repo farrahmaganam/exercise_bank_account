@@ -1,5 +1,7 @@
 package BankAccount;
 
+//Represents a bank account with an associated owner name.
+
 public class SavingsAccount extends BankAccount {
   
   public SavingsAccount(String ownerName) {

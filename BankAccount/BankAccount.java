@@ -1,9 +1,13 @@
 package BankAccount;
 
+
+//Represents a bank account with deposit, withdrawal, and freeze operations.
+
 public class BankAccount {
   
-  private double balance;
-    boolean isFrozen;
+    private double balance;
+    private boolean isFrozen;
+
     public BankAccount() {
         this.balance = 0;
         this.isFrozen = false;
@@ -30,7 +34,7 @@ public class BankAccount {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
         } else if (amount > balance) {
-            System.out.println("Insufficient balance.");
+            System.out.printf("Insufficient balance.");
         } else {
             System.out.println("Invalid amount. Must be greater than 0");
             return;

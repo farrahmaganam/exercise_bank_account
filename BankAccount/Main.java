@@ -2,9 +2,13 @@ package BankAccount;
 
 import java.util.Scanner;
 
+
+// Runs an interactive console session for a savings account.
+
 public class Main {
   public static void main(String[] args) {
-    BankAccount acc1 = new SavingsAccount("Test1");
+    SavingsAccount acc1 = new SavingsAccount("Test1");
+    System.out.println("Account owner: " + acc1.getOwnerName());
     Scanner scanner = new Scanner(System.in);
 
     while (true) {
